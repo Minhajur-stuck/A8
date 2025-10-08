@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
         
           <NavLink to="/"><div className="flex items-center "><img className="h-[40px] " src={logo} alt="" />
-<a className="text-xl">H E R O</a>
+<h1 className="text-xl">H E R O</h1>
             </div></NavLink>
        
       </div>

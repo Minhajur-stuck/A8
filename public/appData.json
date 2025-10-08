@@ -1,0 +1,147 @@
+[
+  {
+    "image": "https://example.com/smplan.png",
+    "title": "SmPlan: ToDo List with Reminder",
+    "companyName": "BrightApps Studio",
+    "id": 1,
+    "description": "SmPlan helps you organize tasks, set reminders, and stay on top of your daily goals. With a simple interface and smart notifications, it makes planning your day effortless. Manage work, study, and personal life all in one place.",
+    "size": 45,
+    "reviews": 2100,
+    "ratingAvg": 4.6,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "image": "https://example.com/picflow.png",
+    "title": "PicFlow: AI Photo Enhancer",
+    "companyName": "PixelCraft Ltd.",
+    "id": 2,
+    "description": "PicFlow uses advanced AI to restore, enhance, and color-correct your photos in seconds. It’s ideal for both beginners and pros who want perfect shots. Transform dull images into stunning visuals instantly.",
+    "size": 60,
+    "reviews": 3400,
+    "ratingAvg": 4.8,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 310 },
+      { "name": "4 star", "count": 720 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "image": "https://example.com/musify.png",
+    "title": "Musify: Stream Your Vibe",
+    "companyName": "WaveLabs",
+    "id": 3,
+    "description": "Musify lets you stream your favorite songs, discover trending playlists, and share music with friends. Enjoy ad-free playback and high-quality sound. Your mood, your music, your way.",
+    "size": 75,
+    "reviews": 8900,
+    "ratingAvg": 4.7,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 620 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 1700 },
+      { "name": "5 star", "count": 5280 }
+    ]
+  },
+  {
+    "image": "https://example.com/fitbuddy.png",
+    "title": "FitBuddy: Smart Workout Coach",
+    "companyName": "HealthSync",
+    "id": 4,
+    "description": "FitBuddy provides personalized workout plans, progress tracking, and nutrition guidance. Stay motivated with smart AI coaching and real-time analytics. Your fitness journey starts here.",
+    "size": 90,
+    "reviews": 5200,
+    "ratingAvg": 4.5,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2700 }
+    ]
+  },
+  {
+    "image": "https://example.com/travelgo.png",
+    "title": "TravelGo: Explore the World",
+    "companyName": "Skyline Innovations",
+    "id": 5,
+    "description": "TravelGo helps you find the best travel destinations, plan trips, and book hotels with ease. Discover hidden gems and local experiences. Make every journey unforgettable.",
+    "size": 68,
+    "reviews": 4100,
+    "ratingAvg": 4.3,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2330 }
+    ]
+  },
+  {
+    "image": "https://example.com/learnify.png",
+    "title": "Learnify: Skills Made Simple",
+    "companyName": "EduCore Systems",
+    "id": 6,
+    "description": "Learnify makes learning fun and accessible with short, engaging lessons. From coding to design, master new skills at your own pace. Track your progress and stay consistent.",
+    "size": 55,
+    "reviews": 6300,
+    "ratingAvg": 4.9,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 4680 }
+    ]
+  },
+  {
+    "image": "https://example.com/foodly.png",
+    "title": "Foodly: Order Fresh Everyday",
+    "companyName": "UrbanEats Co.",
+    "id": 7,
+    "description": "Foodly connects you with your favorite restaurants and delivers fresh meals in minutes. Track your orders in real time and enjoy exclusive discounts. Tasty, fast, and reliable.",
+    "size": 72,
+    "reviews": 7600,
+    "ratingAvg": 4.4,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 430 },
+      { "name": "2 star", "count": 510 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 3460 }
+    ]
+  },
+  {
+    "image": "https://example.com/safevault.png",
+    "title": "SafeVault: Password Manager",
+    "companyName": "SecureTech",
+    "id": 8,
+    "description": "SafeVault protects your online accounts with military-grade encryption. Store, manage, and autofill passwords safely. Your data stays private — always under your control.",
+    "size": 40,
+    "reviews": 2900,
+    "ratingAvg": 4.7,
+    "downloads": 700000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1720 }
+    ]
+  }
+]
+ 
