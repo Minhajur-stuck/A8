@@ -1,6 +1,7 @@
 import React from "react";
 import './Nav.css'
 import gitImage from "../../assets/icons8-github-48.png"
+import logo from "../../assets/logo.png"
 import { Link, Navigate, NavLink } from "react-router";
 
 const Navbar = () => {
@@ -38,15 +39,19 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">H E R O</a>
+        
+          <NavLink to="/"><div className="flex items-center "><img className="h-[40px] " src={logo} alt="" />
+<a className="text-xl">H E R O</a>
+            </div></NavLink>
+       
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           {links}
         </ul>
       </div>
-      <div className="navbar-end">
-       <Link to="https://github.com/Minhajur-stuck"><a className="btn"><img className="h-[30px]" src={gitImage} alt="" /> Contribute</a></Link> 
+      <div className="navbar-end ">
+       <Link to="https://github.com/Minhajur-stuck"><button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-[30px]" src={gitImage} alt="" /> Contribute</button></Link> 
       </div>
     </div>
   );
