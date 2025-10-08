@@ -1,0 +1,4 @@
+.menu-horizontal a.active{
+  color: rgb(118, 37, 211);
+  text-decoration: underline;
+}
