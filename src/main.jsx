@@ -8,17 +8,21 @@ import Home from './Components/Home/Home.jsx';
 import App from './Components/applicationsss/App.jsx';
 import Installation from './Components/Installation/Installation.jsx';
 import AppDetails from './Components/AppDetails/AppDetails.jsx';
+import ErrorPage from './Components/Errorpage/ErrorPage.jsx';
+import AppError from './Components/AppError/AppError.jsx';
 
 
 const router = createBrowserRouter([
   {
     path:'/',
     Component: Root,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         index:true,
         loader:() => fetch('/appData.json'),
         path:'/',
+        
         Component:Home
       },
       {
@@ -28,6 +32,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/installation',
+         loader:() => fetch('/fullAppData.json'),
         Component: Installation
       },
       { 
@@ -36,6 +41,10 @@ const router = createBrowserRouter([
          loader:() => fetch('/fullAppData.json'),
         Component: AppDetails
       },
+      {
+         path:'/appErr',
+        Component: AppError
+      }
 
      
       

@@ -6,7 +6,7 @@ import fb from "../../assets/Frame 1171277690.png"
 
 const Footer = () => {
   return (
-    <div className="bg-[#001931] h-[180px] text-white flex items-center justify-center">
+    <div className="bg-[#001931] h-[152px] text-white flex items-center justify-center">
       <div className="w-[1300px] mx-auto ">
         <div className="flex items-center justify-between mb-5 border-b-1 border-gray-500 pb-5">
           <div className="flex items-center ">

@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 const SingleApp = ({ app }) => {
   console.log(app);
-  const {title,image, id,downloads, rating} = app
+  const {title,image, id,downloads, ratingAvg} = app
   return (
     <Link to={`/appDetails/${id}`}>
       <div className="shadow-lg w-[310px] h-[400px] mb-4 border p-3">
@@ -17,11 +17,11 @@ const SingleApp = ({ app }) => {
       <div className="flex items-center justify-between ">
         <div className="flex items-center gap-1 bg-[#F1F5E8] p-2 rounded-lg">
           <img className="h-[20px]" src={downloadImg}  />
-          <h3 className="text-[#00D390]">9M</h3>
+          <h3 className="text-[#00D390]">{downloads / 1000000}M</h3>
         </div>
         <div className="flex items-center gap-1 bg-[#F1F5E8] p-2 rounded-lg">
           <img className="h-[20px]" src={ratingImg} />
-          <h3 className="text-[#FF8811]">4.5</h3>
+          <h3 className="text-[#FF8811]">{ratingAvg}</h3>
         </div>
       </div>
       </div>
