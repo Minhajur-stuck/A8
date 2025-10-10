@@ -11,7 +11,7 @@ const getAppFromLocal = () => {
 const addToLocalStorage =(id)=>{
   const storedAppData = getAppFromLocal();
   if(storedAppData.includes(id)){
-    alert('alreay ache')
+    return 
   }
   else{
     storedAppData.push(id)

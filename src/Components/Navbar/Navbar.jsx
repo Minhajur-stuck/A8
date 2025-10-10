@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import './Nav.css'
 import gitImage from "../../assets/icons8-github-48.png"
 import logo from "../../assets/logo.png"
 import { Link, Navigate, NavLink } from "react-router";
 
 const Navbar = () => {
+
   const links = 
   <>
-    <NavLink to="/"><li className="m-2">Home</li></NavLink>
-    <NavLink to="/app"><li className="m-2">App</li></NavLink>
-    <NavLink to="/installation"><li className="m-2">Installation</li></NavLink>
+    <NavLink to="/"><li className=" m-2">Home</li></NavLink>
+    <NavLink to="/app"><li  className=" m-2">App</li></NavLink>
+    <NavLink to="/installation"><li className=" m-2">Installation</li></NavLink>
   </>
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -34,7 +35,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu  menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             {links}
           </ul>
@@ -46,7 +47,7 @@ const Navbar = () => {
        
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu   menu-horizontal px-1">
           {links}
         </ul>
       </div>

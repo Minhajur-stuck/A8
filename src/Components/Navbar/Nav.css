@@ -1,4 +1,12 @@
+.menu-horizontal a{
+  color: black;
+}
+
 .menu-horizontal a.active{
-  color: rgb(118, 37, 211);
-  text-decoration: underline;
+  /* border-top: 2px solid rgb(121, 12, 116); */
+ color: #4016a3;
+  border-bottom: 2px solid #632EE3;
+  border-radius: 10px;
+  scale: 1.1;
+  
 }

@@ -4,14 +4,14 @@ import downloadImg from "../../assets/fi_9131795.png"
 import { Link } from "react-router";
 
 const SingleApp = ({ app }) => {
-  console.log(app);
+  // console.log(app);
   const {title,image, id,downloads, ratingAvg} = app
   return (
     <Link to={`/appDetails/${id}`}>
-      <div className="shadow-lg w-[310px] h-[400px] mb-4 border p-3">
-      <div>
-        <div className="border rounded-lg flex justify-center">
-        <img className="border" src="https://play-lh.googleusercontent.com/d2zqBFBEymSZKaVg_dRo1gh3hBFn7_Kl9rO74xkDmnJeLgDW0MoJD3cUx0QzZN6jdsg=s256-rw" alt="" />
+      <div className="shadow-lg w-[310px] transition-transform duration-300 hover:scale-75  h-[400px] mb-4  p-3">
+      <div  className="">
+        <div className="  h-[250px] rounded-lg  ">
+        <img className=" w-full h-full rounded-lg " src={image} alt="" />
       </div>
       <h1 className="font-semibold text-[18px] mb-3 mt-3">{title}</h1>
       <div className="flex items-center justify-between ">

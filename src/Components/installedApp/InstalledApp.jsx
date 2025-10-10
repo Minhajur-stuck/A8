@@ -18,7 +18,7 @@ const InstalledApp = ({ app ,handleUninstall }) => {
   return (
     <div className="mb-7 px-5 flex items-center justify-between">
       <div className="flex items-center">
-        <img className="h-[100px] rounded-lg mr-5" src={img} alt="" />
+        <img className="h-[100px] w-[100px] rounded-lg mr-5" src={image} alt="" />
         <div>
           <h1 className="text-xl font-semibold">{title}</h1>
           <div className="flex items-center gap-2">
