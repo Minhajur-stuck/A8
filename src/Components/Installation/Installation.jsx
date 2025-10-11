@@ -10,6 +10,7 @@ import InstalledApp from "../installedApp/InstalledApp";
 import useLoading from "../hook/useLoading";
 import { FadeLoader } from "react-spinners";
 import Spinner from "../Spinner/Spinner";
+import { toast, ToastContainer } from "react-toastify";
 
 const Installation = () => {
   const [loading, setLoading] = useState(true)
@@ -31,6 +32,7 @@ const Installation = () => {
     removeFromStore(id);
     const updated = installed.filter((app) => app.id !== id);
     setInstalled(updated);
+    toast("App Uninstalled")
   };
 
   const handleSort = (type) => {
@@ -61,7 +63,7 @@ const Installation = () => {
       {loading ? (
         <Spinner></Spinner>
       ) : (
-        <div className="max-w-[1300px] mx-auto">
+        <div className="md:max-w-[1300px] md:mx-auto">
           <div className="text-center my-[40px]">
             <h1 className="font-bold text-4xl">Your Installed Apps</h1>
             <p className="text-[#627382] text-[20px] mt-4">
@@ -105,7 +107,9 @@ const Installation = () => {
                 key={app.id}
                 app={app}
               ></InstalledApp>
+             
             ))}
+             <ToastContainer></ToastContainer>
           </div>
         </div>
       )}

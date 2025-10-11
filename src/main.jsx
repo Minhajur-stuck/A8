@@ -10,6 +10,7 @@ import Installation from './Components/Installation/Installation.jsx';
 import AppDetails from './Components/AppDetails/AppDetails.jsx';
 import ErrorPage from './Components/Errorpage/ErrorPage.jsx';
 import AppError from './Components/AppError/AppError.jsx';
+import NotFound from './Components/Not Found/NotFound.jsx';
 
 
 const router = createBrowserRouter([
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
        
         path:'/appDetails/:id',
          loader:() => fetch('/fullAppData.json'),
+         errorElement:<NotFound></NotFound>,
         Component: AppDetails
       },
       {

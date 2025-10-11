@@ -8,11 +8,11 @@ const Banner = () => {
   return (
     <div className="mt-[80px]">
       <div>
-        <h1 className="font-bold text-[72px] text-center  mb-[20px]">
+        <h1 className="font-bold text-[40px] md:text-[72px] text-center  mb-[20px]">
           We Build <br /> <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">Productive</span> Apps
         </h1>
-        <p className="text-center px-50 text-[#627382] text-[20px] mb-[40px]">
-          At HERO.IO, we craft innovative apps designed to make everyday life
+        <p className="text-center px-3 md:px-50 text-[#627382] text-[20px] mb-[40px]">
+          At A-Store, we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting.Our goal is to turn your ideas
           into digital experiences that truly make an impact.
         </p>
@@ -32,10 +32,10 @@ const Banner = () => {
       <div className="flex justify-center">
          <img src={BannerImage} alt="" />
       </div>
-      <div className="w-full h-[300px] bg-linear-to-r from-[#632EE3] to-[#9F62F2] flex justify-center text-white items-center">
-        <div className="w-[900px]  text-center">
+      <div className="w-full py-10 md:py-0 md:h-[300px] bg-linear-to-r from-[#632EE3] to-[#9F62F2] flex justify-center text-white items-center">
+        <div className="w-full md:w-[900px]  text-center">
           <h1 className="text-4xl font-bold">Trusted By Millions, Built For You</h1>
-        <div className="flex items-center justify-center gap-30 mt-[40px]">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-30 mt-[40px]">
           <div >
             <p>Total Downloads</p>
             <h1 className="text-6xl font-bold mt-2 mb-2">29.6M</h1>

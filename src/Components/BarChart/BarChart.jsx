@@ -7,7 +7,7 @@ const BarCharts = ({ratings}) => {
   // console.log(data)
 
   return (
-    <div style={{width:"1300px", height:"300px"}}>
+    <div className='w-full h-[500px] md:w-[1300px] md:h-[300px]'>
       <ResponsiveContainer width="90%"  height="100%">
         <BarChart
           width={500}

@@ -18,7 +18,7 @@ const App = () => {
   const filteredData = data.filter((app) =>
     app.title.toLowerCase().includes(term)
   );
-  const { apps, loading } = useLoading();
+
 
   // console.log(loadData);
 
@@ -35,8 +35,7 @@ const App = () => {
       setLoadData(filteredData);
     }
   };
-  // const searchData = handleOnChange ? data.filter(app => (app.title).toLowerCase().includes(handleOnChange) ) : data
-  // console.log(handleOnChange)
+  
 
   useEffect(() => {
     setTimeout(() => {
@@ -58,9 +57,9 @@ const App = () => {
               Millions
             </p>
           </div>
-          <div className="w-[1300px] mx-auto flex items-center justify-between px-4 mb-[20px]">
-            <h3 className="font-semibold text-2xl">
-              ({filteredData.length}) Apps Founded
+          <div className="md:w-[1300px] mx-auto flex flex-col md:flex-row md:items-center justify-between px-4 mb-[20px]">
+            <h3 className="font-semibold mb-3 md:mb-0 text-2xl">
+              ({loadData.length}) Apps Founded
             </h3>
 
             <label className="input">
@@ -80,12 +79,7 @@ const App = () => {
                   <path d="m21 21-4.3-4.3"></path>
                 </g>
               </svg>
-              {/* <input
-                type="search"
-                required
-                placeholder="Search"
-                onChange={(e) => setSearch(e.target.value)}
-              /> */}
+              
               <input
                 type="search"
                 required
@@ -94,7 +88,7 @@ const App = () => {
               />
             </label>
           </div>
-          <div className="grid grid-cols-4 w-[1300px] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 pl-6 md:pl-0 md:grid-cols-4 md:w-[1300px] md:mx-auto">
             {loadingAni ? (
               <Spinner></Spinner>
             ) : loadData.length === 0 ? (
@@ -105,22 +99,7 @@ const App = () => {
               ))
             )}
           </div>
-          {/* <div className="border grid grid-cols-4">
-            {
-            loadingAni ? (
-              <Spinner></Spinner>
-            ) : loadData.length === 0 ? (
-              navigate("/appErr")
-            ) : (
-              loadData.map((app) =>  (
-                <div className="">
-                  <div className="grid grid-cols-4 w-[1300px] mx-auto">
-                     <SingleApp key={app.id} app={app}></SingleApp>
-                  </div>
-                </div>
-              )))
-          }
-          </div> */}
+         
 
           
         </div>
